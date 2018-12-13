@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="DAN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log ind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <div class="fade_in">
+        <nav>
+
+            <!--KEA logo-->
+
+            <div class="logoboks">
+                <div class="logo_login"></div>
+            </div>
+
+
+        </nav>
+
+
+
+
+        <!--login boxe-->
+
+        <div class="container_login">
+            <div class="unilogin"></div>
+
+            <form action="forside.html">
+                <p>Brugernavn</p>
+                <input type="text" name="brugernavn" id="username" required>
+                <br>
+                <p>Kodeord</p>
+                <input type="password" name="password" id="password" required>
+                <br> <br>
+                <input type="checkbox" checked="checked" name="remember"> Husk mig
+                <input type="submit" value="" id="submit" onclick="validate()" />
+
+            </form>
+
+
+            <div class="login_submit"></div>
+            <a href="glemt_adgangskode.html">
+                <div class="glemt">
+                    Glemt adgangskode?
+                </div>
+
+            </a>
+
+
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>

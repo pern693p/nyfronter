@@ -1,0 +1,1457 @@
+/* --- INDHOLDFORTEGNELSE
+
+1. Variabler og overordnet styling
+2. Layout og grid
+4. LOG IND
+5. FORSIDE
+6. SKEMA
+7. SKEMA VALGT LEKTION
+8. AFLEVERINGER OVERSIGT
+9. UPLOAD NY AFLEVERING
+10. AFLVERINGER
+11. AFLEVERING FEEDBACK
+12. CHAT
+13. VALGT CHAT
+14. HEADER
+
+----- */
+
+
+/* ------- Variabler og overordnet styling ---------- */
+
+body {
+    /*    width: 375px;
+    */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+    {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+/* ------- Layout og grid ---------- */
+
+
+
+
+/* ------- LOG IND  ---------- */
+
+
+/* ----- Logoboks ----*/
+.logoboks {
+    background-color: #FFB4AA;
+    height: 40vh;
+    display: flex;
+
+    justify-content: center;
+}
+
+.logo_login {
+    background-image: url(img/png/kea_logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 17vw;
+    width: 90vw;
+
+
+}
+
+
+
+/*- CONTAINER -*/
+
+
+.container_login {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+/* ------ UNI LOGIN -------*/
+
+.unilogin {
+    background: url("img/SVG/unilogin.svg");
+    background-repeat: no-repeat;
+
+    width: 80%;
+    height: 20vw;
+
+    margin: auto;
+    margin-top: 5%;
+}
+
+
+
+/*- FORMUALR -*/
+
+form {
+    margin-left: 10vw;
+}
+
+form p {
+    color: #4D374B;
+    margin: 0;
+}
+
+input[type=text] {
+    border: 1px solid #fdc0ba;
+    font-size: 7vw;
+    width: 88%;
+    height: 15vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    border-radius: 4px;
+
+
+}
+
+input[type=password] {
+    border: 1px solid #fdc0ba;
+    font-size: 7vw;
+    width: 88%;
+    height: 15vw;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+input[type=submit] {
+    background: url(img/SVG/login.svg);
+    background-repeat: no-repeat;
+    border: 0;
+    display: block;
+    height: 10vw;
+    width: 30vw;
+    margin-left: 52vw;
+}
+
+
+
+
+.glemt {
+    font-size: 3vw;
+    font-weight: 100;
+    margin-top: 9vw;
+    text-align: center;
+
+}
+
+
+/*- GLEMT ADGANGSKODE -*/
+
+#kea_box {
+    background: #FFB4AA;
+    margin: 0px;
+    padding: 40px 20px;
+}
+
+#kea_logo {
+    background-image: url(img/png/kea_logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 140px;
+}
+
+#knap {
+    background: #FFB4AA;
+    margin: 25px 50px;
+    padding: 10px;
+}
+
+#glemt_adgangskode h2 {
+    font-size: 1rem;
+    margin: 5%;
+}
+
+/* ------- FORSIDE ---------- */
+
+.themebox {
+    border: 3px solid #f79d94;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.description {
+    flex-grow: 0.5;
+    width: 75%
+}
+
+.themebox h1 {
+    font-size: 1.3rem;
+    margin: 5% 3%;
+    color: #3F3140;
+
+}
+
+.themebox h2 {
+    font-size: 1.1rem;
+
+    margin: 5% 3%;
+    color: #675069;
+
+}
+
+.assignmentbox {
+    border: 3px solid #f79d94;
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assignmentbox h1 {
+    font-size: 1.3rem;
+
+    margin: 5% 3%;
+    color: #3F3140;
+}
+
+.assignmentbox h2 {
+    font-size: 1.1rem;
+
+    margin: 5% 3%;
+    color: #675069;
+
+}
+
+.arrow {
+    background-image: url(img/SVG/arrow.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    flex-grow: 1;
+    margin-top: 7%;
+
+
+}
+
+.homework {
+    border: 3px solid #f79d94;
+    margin: 5%;
+    background-color: #f79d94
+}
+
+.homework h1 {
+    font-size: 1.3rem;
+
+    margin: 5% 3%;
+    color: #3F3140;
+
+}
+
+.homework h2 {
+    font-size: 1.1rem;
+
+    margin: 5% 3%;
+    color: #675069;
+
+}
+
+/* ------- SKEMA  ---------- */
+/*- Dato og pile - */
+
+#skema_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 60vw;
+    margin: auto;
+    padding: 4vw;
+
+}
+
+
+.dato {
+    font-family: sans-serif;
+    font-size: 7vw;
+    flex-grow: 1;
+    color: #4D374B;
+
+}
+
+.left {
+    background-image: url(img/SVG/arrowleft.svg);
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 6vw;
+    flex-grow: 2;
+    margin-top: 1vw;
+}
+
+.right {
+    background-image: url(img/SVG/arrowright.svg);
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 12vw;
+    flex-grow: 2;
+    margin-top: 1vw;
+}
+
+
+/*- Container til lektionskasser + lyserøde lektionskasser -*/
+
+#lektioner {
+    width: 100%;
+
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.lektion_kasse {
+    background-color: #F79D94;
+    width: 90%;
+    flex-grow: 1;
+    margin: auto;
+    margin-bottom: 5%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* - Tekstinhold til hver lektion -*/
+
+
+.lektion_kasse_top {
+    flex-grow: 1;
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+}
+
+.lektion_kasse_bund {
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.text_undervisning {
+    font-size: 4vw;
+    font-weight: 100;
+    flex-grow: 5;
+    padding: 0.5vw 2vw;
+    color: #4D374B;
+
+}
+
+.info_ikon {
+    background-image: url(img/png/info.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    margin-top: 1vh;
+    margin-right: 1vw;
+
+}
+
+.text_tid {
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 0.5vw 2vw;
+    color: #4D374B;
+}
+
+.text_modul {
+    font-size: 5vw;
+    font-weight: 500;
+    padding: 0.5vw 2vw;
+    color: #4D374B;
+}
+
+
+/* ------- SKEMA VALGT LEKTION / SKEMAMODUL  ---------- */
+
+hr {
+    align-content: center;
+    color: black;
+    width: 95%;
+}
+
+/*- Lektionmodul header -*/
+
+.lektion_header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0vw;
+    padding: 4vw;
+}
+
+.skemalektion_back {
+    background-image: url(img/SVG/arrowleft.svg);
+    background-repeat: no-repeat;
+    width: 7vw;
+    height: 7vw;
+    flex-grow: 1;
+    margin-top: 0.5vw;
+}
+
+.skemalektion_dato {
+    font-size: 7vw;
+    flex-grow: 5;
+    margin-left: 8vw;
+    color: #4D374B;
+}
+
+
+/*- Lektionmodul secton lektion (pink boks) -*/
+
+#section_lektion_info_boks {
+    background-color: #F79D94;
+    width: 95%;
+    height: 25vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lektion_info_indhold {
+    font-size: 8vw;
+    font-weight: 700;
+    padding: 0vw 2vw;
+    color: #4D374B;
+}
+
+
+.lektion_info_lokale {
+    font-size: 4vw;
+    font-weight: 100;
+    color: #4D374B;
+    padding: 0.5vw 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.location_logo {
+    background-image: url(img/png/location.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 1vw 1vw 2vw 1vw;
+    width: 5vw;
+    height: 5vw;
+
+}
+
+.location_text {
+    font-size: 4vw;
+    margin: 1vw 2vw;
+}
+
+/*- Lektionmodul section undervisere -*/
+
+#section_underviser {
+    width: 93%;
+    height: 35vw;
+    margin: 1vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.skemalektion_title {
+    font-size: 8vw;
+    margin-left: 1vw;
+    color: #4D374B;
+}
+
+#underviser_container {
+    display: flex;
+    flex-direction: row;
+    margin: 1;
+}
+
+.underviser {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+
+    width: 10vw;
+    height: 20vw;
+}
+
+.person_logo {
+    background-image: url(img/SVG/chatdark.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 12vw;
+    height: 12vw;
+    margin: auto;
+}
+
+.underviser_navn {
+    font-size: 4vw;
+    margin: auto;
+    margin-left: 2vw;
+    color: #4D374B;
+
+}
+
+
+/*- Lektionmodul section dokumenter -*/
+
+#section_lektion_dokumenter {
+    width: 100%;
+    height: 67vw;
+    margin: 1vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dokument_boks {
+    background-color: #fdc0ba;
+    width: 95%;
+    height: 25vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.attached_boks {
+    background-color: #f8948b;
+    width: 35vw;
+    height: 25vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attached_logo {
+    background-image: url(img/SVG/attached.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16vw;
+    height: 16vw;
+
+}
+
+
+.attached_text {
+    font-size: 7vw;
+    font-weight: 300;
+    padding: 5vw;
+    color: #4D374B;
+
+}
+
+
+/* ------- SKEMA VALGT LEKTION  ---------- */
+
+
+
+/* ------- AFLEVERINGER OVERSIGT ---------- */
+#aflevering1 h3,
+#aflevering2 h3 {
+    font-family: arial, sans-serif;
+    font-size: 1rem;
+
+}
+
+#aflevering1 h3,
+#aflevering2 h4 {
+    font-family: arial, sans-serif;
+
+}
+
+#tema1 h2,
+#tema2 h2,
+#tema3 h2,
+#tema4 h2 {
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#aflevering1 {
+    background: #ffffff;
+    margin: 12px;
+    padding: 4px;
+    border: solid #FFB4AA 2px;
+}
+
+#pil1 {
+    background-image: url(img/SVG/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 80%;
+    margin-top: -15%
+}
+
+#aflevering2 {
+    background: #ffffff;
+    margin: 12px;
+    padding: 4px;
+    border: solid #FFB4AA 2px;
+
+}
+
+#pil2 {
+    background-image: url(img/SVG/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 80%;
+    margin-top: -15%
+}
+
+
+#tema1 {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+}
+
+#tema2 {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+}
+
+#tema3 {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+}
+
+#tema4 {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+}
+
+
+
+
+/* ------- UPLOAD NY AFLEVERING ---------- */
+
+#titel,
+#afleveringsfrist,
+#eller,
+#upload,
+#aflever h2 {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+#indsaet,
+#linkfelt,
+#kommentar,
+#kommentarfelt h3 {
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    padding: 0 0 0 15px;
+}
+
+
+#tilbage {
+    background-image: url(img/png/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+    margin-right: 20%
+}
+
+#titel h2 {
+    margin-top: -7%
+}
+
+
+#titel {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+
+}
+
+#titel {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+}
+
+#afleveringsfrist {
+    background: #ffffff;
+    margin: 12px;
+    padding: 10px;
+    border: solid #FFB4AA 0.5px;
+}
+
+#indsaet {
+    text-align: left;
+}
+
+#linkfelt {
+    background: #ffffff;
+    margin: 1px 12px;
+    padding: 1px;
+    border: solid #FFB4AA 0.5px;
+}
+
+#upload {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 5px 10px;
+}
+
+#kommentarfelt {
+    background: #ffffff;
+    margin: 1px 12px;
+    padding: 1px;
+    border: solid #FFB4AA 0.5px;
+}
+
+#aflever {
+    background: #FFB4AA;
+    margin: 12px 60px;
+    padding: 5px 10px;
+}
+
+/* ------- AFLVERINGER ---------- */
+
+#box1,
+#box2,
+#box3,
+#box4,
+#dato,
+h2 {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+#opgave h3 {
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    padding: 0 0 0 15px;
+}
+
+.aflevering_box {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+}
+
+.dato_aflevering_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 13px;
+
+}
+
+#dato {
+    background: #FFB4AA;
+    padding: 2px;
+    flex-basis: 40px;
+    flex-grow: 1;
+}
+
+#opgave {
+    background: #ffffff;
+    border: solid black 0.02px;
+    padding: 2px;
+    flex-basis: 40px;
+    flex-grow: 3;
+
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+#opgave h3 {
+    width: 80%;
+    flex-grow: 1;
+    flex-basis: 20px;
+}
+
+
+#feedback1 {
+    background-image: url(img/SVG/approved.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    margin: auto;
+    margin-right: 2vw;
+    flex-basis: 30px;
+
+}
+
+#feedback2 {
+    background-image: url(img/SVG/notapproved.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    margin: auto;
+    margin-right: 2vw;
+    flex-basis: 30px;
+}
+
+#feedback3 {
+    background-image: url(img/SVG/notgraded.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    margin: auto;
+    margin-right: 2vw;
+    flex-basis: 30px;
+}
+
+#feedback4 {
+    background-image: url(img/SVG/approved.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 30px;
+    margin: auto;
+    margin-right: 2vw;
+    flex-basis: 30px;
+}
+
+
+
+/* ------- AFLEVERING FEEDBACK ---------- */
+
+#titel2,
+#afleveret,
+#godkendt,
+#feedback h2 {
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
+
+#feedback h3 {
+    font-family: arial, sans-serif;
+    font-size: 11px;
+    padding: 0 0 0 15px;
+}
+
+#titel2 {
+    background: #FFB4AA;
+    margin: 12px;
+    padding: 10px;
+
+
+}
+
+#titel2 h2 {
+    margin-top: -7%;
+}
+
+#tilbage2 {
+    background-image: url(img/png/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+}
+
+#afleveret {
+    background: #ffffff;
+    margin: 12px;
+    padding: 10px;
+    border: solid #FFB4AA 0.5px;
+}
+
+#godkendt {
+    background: #ffffff;
+    margin: 12px;
+    padding: 10px;
+    border: solid #FFB4AA 0.5px;
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+#godkendt_hak {
+    background-image: url(img/SVG/approved.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 27px;
+    height: 27px;
+    margin-left: 5%
+}
+
+#feedback {
+    background: #ffffff;
+    margin: 12px;
+    padding: 10px 0 80px 0;
+    border: solid #FFB4AA 0.5px;
+}
+
+
+
+/* ------- CHAT ---------- */
+/* ------- CHAT ---------- */
+
+#search {
+    display: flex;
+    width: 100%;
+    margin: 3vw 0 0 0;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #F7A39B;
+    font-size: 1em;
+    background-color: white;
+    background-image: url(img/SVG/searchicon.svg);
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: 80vw;
+    padding: 2vw;
+}
+
+.content {
+    margin: 12px;
+}
+
+.latestrowone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0vw 0vw 5vw;
+}
+
+.latestrowtwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.arowone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0vw 0vw 5vw;
+}
+
+.arowtwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.content a {
+    color: black;
+    text-decoration: none;
+}
+
+.chat {
+    box-sizing: border-box;
+    width: 28vw;
+    height: 28vw;
+    border: none;
+    background-color: #F7A39B;
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat img {
+    margin: 3vw 0 0;
+    width: 12vw;
+    align-self: center;
+}
+
+.chat p {
+    font-size: 1.2em;
+    margin: 5vw 0vw 0vw;
+}
+
+#plus {
+    background-image: url(img/SVG/plusdark.svg);
+    width: 5vw;
+    height: 5vw;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1vw;
+    left: 19vw;
+}
+
+#nochat {
+    visibility: hidden;
+}
+
+
+
+
+
+/* ------- VALGT CHAT ---------- */
+
+
+#chat_name {
+    color: white;
+    margin: 4px;
+}
+
+.chatheader {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#logo_chat {
+    background-image: url(img/SVG/chatwhite.svg);
+    height: 60px;
+    width: 60px;
+    background-repeat: no-repeat;
+}
+
+#plus_chat {
+    background-image: url(img/SVG/pluswhite.svg);
+    background-repeat: no-repeat;
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    left: 92vw;
+    top: 1vw;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+#arrow_chat {
+    background-image: url(img/SVG/arrowchat.svg);
+    position: fixed;
+    height: 10vw;
+    width: 10vw;
+    left: 20px;
+    top: 5%;
+    background-repeat: no-repeat;
+}
+
+
+.logo_person {
+    background-image: url(img/SVG/chatdark.svg);
+    background-size: 100%;
+    height: 35px;
+    width: 35px;
+}
+
+
+#logo_chat_dark1 {
+    position: absolute;
+    left: 90vw;
+    top: 160px;
+}
+
+#logo_chat_dark2 {
+    position: absolute;
+    left: 1vw;
+    top: 290px;
+}
+
+#logo_chat_dark3 {
+    position: absolute;
+    left: 90vw;
+    top: 490px;
+}
+
+
+#chat_box1 {
+    height: 12%;
+    width: 75%;
+    background-color: #4c374b;
+    position: absolute;
+    top: 160px;
+    left: 15px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#chat_box1 p {
+    color: white;
+    font-size: 1em
+}
+
+#chat_box2 {
+    height: 12%;
+    width: 75%;
+    background-color: #FFB0A5;
+    top: 290px;
+    left: 65px;
+    border-radius: 15px;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#file {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+#file p {
+    padding-left: 10px;
+}
+
+#chat_box2 p {
+    color: #4c374b;
+    font-size: 1em;
+    margin: 0;
+}
+
+#chat_box3 {
+    height: 12%;
+    width: 75%;
+    background-color: #4c374b;
+    position: absolute;
+    top: 470px;
+    left: 15px;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+
+#chat_box3 p {
+    color: white;
+    font-size: 1em;
+}
+
+#attachment_logo {
+    background-image: url(img/SVG/attached.svg);
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#chat_text4 {
+    height: 15vh;
+    color: #4c374b;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    top: 28em;
+    left: 9em;
+}
+
+#chat_text5 {
+    height: 15vh;
+    width: 15em;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    position: absolute;
+    top: 35em;
+    left: 3em;
+
+
+}
+
+.chat_bottom {
+    height: 15vh;
+    width: 100%;
+    background-color: #F79D94;
+    flex-wrap: wrap;
+    display: flex;
+    bottom: 0;
+    position: fixed;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+#type input {
+    width: 70vw;
+}
+
+#arrow_bottom {
+    background-image: url(img/SVG/arrowright.svg);
+    height: 3vh;
+    width: 6vw;
+    background-repeat: no-repeat;
+    background-position: 99% 7%;
+
+}
+
+#attrachment_bottom {
+    background-image: url(img/SVG/attached.svg);
+    background-size: 100%;
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+}
+
+/* ------- FADE-IN ANIMATION ---------- */
+
+.fade_in {
+    animation-name: fadein_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* -------- HEADER ------------ */
+
+header {
+    width: 100%;
+    height: 15vh;
+    background-color: #4c374b;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+    align-self: center;
+}
+
+.logo {
+    z-index: 1000;
+    height: 3%;
+    width: 20%;
+    background-image: url(img/SVG/logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 40%;
+    top: 6%;
+}
+
+#pslogo {
+    display: none;
+}
+
+#chatlogo {
+    display: none;
+}
+
+
+nav a:visited {
+    color: #ffffff;
+}
+
+/*MENU STUFF*/
+
+/* Hamburger button styles. */
+.hamburger-button {
+    position: absolute;
+    transition: .3s ease-in-out;
+    width: 40px;
+    height: 34px;
+    display: block;
+    top: 5%;
+    right: 2rem;
+    z-index: 100;
+}
+
+.hamburger-button span {
+    position: absolute;
+    height: 8px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #f8f8f8;
+    top: 0;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 0px;
+}
+
+.hamburger-button span:nth-child(2),
+.hamburger-button span:nth-child(3) {
+    top: 13px;
+}
+
+.hamburger-button span:nth-child(4) {
+    top: 26px;
+}
+
+.hamburger-button.active span {
+    background-color: #FFF;
+}
+
+.hamburger-button.active span:nth-child(1),
+.hamburger-button.active span:nth-child(4) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* 1. Style the overlay & navigation. */
+.logout {
+    box-sizing: border-box;
+    background-color: #F58E81;
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    background: #3F3140;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s, height .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+nav {
+    font-size: 2rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    opacity: 0;
+    margin: 3rem 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity .2s ease;
+    opacity: .75;
+}
+
+
+
+nav ul li a:hover {
+    opacity: 1;
+}
+
+/* 2. Add the animation. */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-25%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* 3. Style the visible overlay. */
+.overlay.visible {
+    opacity: .95;
+    visibility: visible;
+    height: 100%;
+}
+
+.overlay.visible li {
+    animation: fadeInLeft .3s ease forwards;
+}
+
+.overlay.visible li:nth-of-type(1) {
+    animation-delay: 0.23s;
+}
+
+.overlay.visible li:nth-of-type(2) {
+    animation-delay: 0.26s;
+}
+
+.overlay.visible li:nth-of-type(3) {
+    animation-delay: 0.29s;
+}
+
+.overlay.visible li:nth-of-type(4) {
+    animation-delay: 0.32s;
+}
+
+.overlay.visible li:nth-of-type(5) {
+    animation-delay: 0.35s;
+}

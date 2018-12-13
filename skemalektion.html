@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="DAN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skema valgt lektion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+</head>
+
+<body>
+    <div class="fade_in">
+
+        <!--BOKS + MENU-->
+
+        <header>
+            <div class="logo"> </div>
+
+            <a href="#" class="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="overlay">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="forside.html">Forside</a></li>
+                        <li><a href="skema.html">Skema</a></li>
+                        <li><a href="afleveringer_oversigt.html">Afleveringer</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+
+                    </ul>
+                    <div class="logout"><a href="index.html">Log ud</a></div>
+                </nav>
+            </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+            <script src="js/index.js"></script>
+        </header>
+
+
+        <div class="lektion_header">
+            <a href="skema.html">
+                <div class="skemalektion_back">
+                </div>
+            </a>
+            <div class="skemalektion_dato">
+                Lektion 8:30 - 9:15
+            </div>
+        </div>
+
+
+        <div id="section_lektion_info_boks">
+            <div class="text_undervisning">Undervisning</div>
+            <div class="lektion_info_indhold">MODULINTRO</div>
+            <div class="lektion_info_lokale">
+                <div class="location_logo"></div>
+                <div class="location_text">Lokale 132 (Merkur) @ Lygten 16</div>
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <div id="section_underviser">
+
+            <div class="skemalektion_title">Undervisere</div>
+
+            <div id="underviser_container">
+
+                <div class="underviser">
+                    <div class="person_logo"></div>
+                    <div class="underviser_navn">tohk</div>
+                </div>
+
+
+                <div class="underviser">
+                    <div class="person_logo"></div>
+                    <div class="underviser_navn">idwh</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="section_lektion_dokumenter">
+
+
+            <div class="skemalektion_title">Dokumenter</div>
+
+            <div class="dokument_boks">
+                <div class="attached_boks">
+                    <div class="attached_logo"></div>
+                </div>
+
+                <div class="attached_text">Video til web prototype krav</div>
+            </div>
+
+
+            <div class="dokument_boks">
+                <div class="attached_boks">
+                    <div class="attached_logo"></div>
+                </div>
+                <div class="attached_text">Slides med krav til prototype</div>
+            </div>
+
+
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>

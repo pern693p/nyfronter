@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="DAN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fade_in">
+        <!--BOKS + MENU-->
+
+        <header>
+            <h1>Chat</h1>
+            <div class="logo" id="chatlogo"> </div>
+
+            <a href="#" class="hamburger-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="overlay">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="forside.html">Forside</a></li>
+                        <li><a href="skema.html">Skema</a></li>
+                        <li><a href="afleveringer_oversigt.html">Afleveringer</a></li>
+                        <li><a href="chat.html">Chat</a></li>
+
+                    </ul>
+
+                    <div class="logout"><a href="index.html">Log ud</a></div>
+
+                </nav>
+            </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+            <script src="js/index.js"></script>
+        </header>
+
+        <!--SØGEFELT-->
+
+        <div id="search"><input type="text" name="search" placeholder="Søg.."></div>
+
+
+        <!--PERSONER-->
+        <div class="content">
+            <h2>Seneste</h2>
+            <div class="latestrowone">
+
+
+                <a href="valgt_chat.html">
+                    <div class="chat" id="pernillechat">
+                        <img src="img/SVG/chatdark.svg">
+                        <p>Pernille R.</p>
+                    </div>
+                </a>
+                <div class="chat" id="sarahchat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Sarah D.</p>
+                </div>
+                <div class="chat" id="laurachat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Laura W.</p>
+                </div>
+            </div>
+            <div class="latestrowtwo">
+                <div class="chat" id="millechat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Mille R.</p>
+                </div>
+                <div class="chat" id="albertechat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Alberte E.</p>
+                </div>
+                <div class="chat" id="gruppechat">
+                    <div id="plus"></div>
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Gruppe 10</p>
+                </div>
+            </div>
+
+            <h2>A</h2>
+            <div class="arowone">
+                <div class="chat" id="albertechat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Alberte E. </p>
+                </div>
+                <div class="chat" id="annachat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Anna H.</p>
+                </div>
+                <div class="chat" id="askechat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Aske R.</p>
+                </div>
+            </div>
+
+            <div class="arowtwo">
+                <div class="chat" id="amaliechat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Amalie P.</p>
+                </div>
+                <div class="chat" id="anderschat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Anders F.</p>
+                </div>
+                <div class="chat" id="alfredchat">
+                    <img src="img/SVG/chatdark.svg">
+                    <p>Alfred B.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
